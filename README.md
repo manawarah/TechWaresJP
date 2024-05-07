@@ -2,4 +2,4 @@
 Projeto E-Commerce Hardware e Periféricos
 
 Colaboradores:
-Matheus Albuquerque, Gabriel , Daniel, Guilherme.
+Matheus Albuquerque, Gabriel Santos , Daniel Coimbra, Guilherme Gomes.
