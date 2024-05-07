@@ -1,5 +1,5 @@
 # E-Commerce
-Projeto Aplicações para Internet
+Projeto E-Commerce Hardware e Periféricos
 
 Colaboradores:
 Matheus Albuquerque, Matheus Ramalho, Gabriel , Daniel, Guilherme.
