@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+:root{
+
+    --color-back: rgb(190, 190, 190);
+}
+*{
+
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 16px;
+    font-family: Poetsen One;
+}
+body{
+    
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-back);
+}
+header{
+
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    box-shadow: 0px 0px 7px black;
+}
+.search{
+
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+}
+.box-promo{
+
+
+    width: 220px;
+    height: 300px;
+    box-shadow: 0px 0px 7px black;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+.box-promo:hover{
+
+    transition: .4s;
+    transform: scale(1.05);
+}
+.img-promo{
+
+    background-color: black;
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+}
+.desc-promo{
+
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+/* Adicionar retiências caso ultrapsse 2 linhas */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+.desc-promo:hover{
+
+    text-decoration: underline;
+}
+.btn-promo{
+
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(22, 144, 22);
+    cursor: pointer;
+}
+.btn-promo:hover{
+
+    transition: .4s;
+    box-shadow: 0px 0px 7px rgb(22, 144, 22);
+}
+
+
+
+
+
+
+
+
+
+.placeholder-center::placeholder{
+
+    text-align: center;
+}
