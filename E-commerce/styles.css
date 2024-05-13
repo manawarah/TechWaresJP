@@ -21,18 +21,30 @@
     
 }
 .btn-carrinho{
-    padding: 5px;
-    height: 70%;
-    width: 10%;
-    border: 1px solid grey;
-    border-radius: 5px;
     background-color: green;
     color: white;
+    padding: 15px;
+    border-radius: 20px;
 }
 .btn-carrinho:hover{
     background-color: greenyellow;
     transition: 0.3s;
 }
+.select-opt{
+    margin-left: 20%;
+    padding: 10px;
+    background-color: #424242;
+    color: #9F9F9F;
+    border-radius: 5px;
+}
+.pesquisar{ 
+    width: 40%;
+    margin-top: 1%;
+    padding: 10px;
+    background-color: #424242;
+    color: #9F9F9F;
+    border-radius: 5px;
+}
 
 
 
@@ -43,19 +55,51 @@
 
 
 
+main{}
 
+.logo-txt{
+    display: flex;
+}
+.txt{
+    background-color: #424242;
+    width: 40%;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    margin-left: -04%;
+    margin-top: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.btn-sobrenos{
+    background-color: #E90313;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 12pt;
+    cursor: pointer;
+}
 
-.background-main{
-
-    object-fit: cover;
-    width: 100%;
-    height: 700px;
+.itens-promo{
+    width: 50%;
+    
+}
+.box-promo{
+    
 }
 #promo{
-
+    
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+.btn-vermais{
+    margin-left: 45%;
+    border-radius: 50px;
+    font-size: 24pt;
+    margin-top: 10px;
+    cursor: pointer;
 }

@@ -10,7 +10,6 @@
     box-sizing: border-box;
     margin: 0;
     font-size: 16px;
-    font-family: Poetsen One;
 }
 body{
     
@@ -35,9 +34,9 @@ header{
 }
 .box-promo{
 
-
+    
     width: 220px;
-    height: 300px;
+    height: 200px;
     box-shadow: 0px 0px 7px black;
     margin: 20px;
     border-radius: 10px;
@@ -63,11 +62,10 @@ header{
 }
 .desc-promo{
 
-    width: 90%;
-    height: 40px;
+    
     text-align: center;
     margin: 10px;
-    color: black;
+    color: white;
     text-decoration: none;
 /* Adicionar retiências caso ultrapsse 2 linhas */
     display: -webkit-box;
@@ -76,16 +74,16 @@ header{
     -webkit-box-orient: vertical;
 }
 .desc-promo:hover{
-
     text-decoration: underline;
 }
 .btn-promo{
-
-    width: 90%;
-    height: 40px;
+    margin-bottom: 1%;
+    width: 80%;
+    height: 10%;
     border-radius: 10px;
     background-color: rgb(22, 144, 22);
     cursor: pointer;
+    color: white;
 }
 .btn-promo:hover{
 
