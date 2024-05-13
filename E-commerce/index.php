@@ -9,50 +9,43 @@
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <title>TechWare</title>
 </head>
-<body>
+<body style="background-color: #303030;">
     <header class="cabecalho">
         <div class="logo">
             <a href="#"><img src="assets/Techware.png" alt="logo" width="200px"></a>
         </div>
         <nav class="nav-bar">
-
-            
             <div class="nav-div">
                 <i class="fa-solid fa-user fa-lg" style="color: #e90313;"></i>
                 <span style="font-size: 10pt;">MINHA CONTA</span>
                 <br>
-                <a class="nav-link" href="login/login.html">ENTRAR / CADASTRO</a>
+                <a class="nav-link" href="login/login.php">ENTRAR / CADASTRO</a>
             </div>
-
-            
             <div class="nav-div">
                 <i class="fa-solid fa-circle-question fa-lg" style="color: #e90313;"></i>
                 <span style="font-size: 10pt;">ATENDIMENTO</span>
                 <br>
                 <a class="nav-link" href="#">AO CLIENTE</a>
             </div>
-
-            
             <div class="nav-div">
                 <i class="fa-solid fa-star fa-lg" style="color: #e90313;"></i>
                 <span style="font-size: 10pt;">MEUS</span>
                 <br>
                 <a class="nav-link" href="#">FAVORITOS</a>
             </div>
-            
         </nav>
         <button class="btn-carrinho"><i class="fa-solid fa-cart-shopping fa-lg" style="color: white;"></i> CARRINHO</button>
     </header>
     <main>
 
-<!-- Background de entrada -->
+        <!-- Background de entrada -->
 
-       <!-- <figure>
+        <!-- <figure>
             <img src="./assets/photos/back-main.png" alt="Banckgound Principal" class="background-main">
         </figure>
         -->
 
-<!-- Caixas de promoção -->
+        <!-- Caixas de promoção -->
 
         <div id='promo'>
             <div class="box-promo">
