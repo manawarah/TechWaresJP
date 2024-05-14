@@ -1,41 +1,4 @@
 
-
-/* Cabeçalho/Header do site */
-
-.cabecalho{
-    justify-content: space-evenly;
-    height: 15%;
-    color: white;
-}
-.nav-bar{
-    display: flex;
-    margin-right: 100px;
-}
-.nav-div{
-    margin-left: 20px;
-}
-.nav-link{
-    text-decoration: none;
-    color: white;
-}
-.nav-link:hover{
-    color: red;
-    text-decoration: underline;
-    transition: .3s;
-    
-}
-.btn-carrinho{
-    background-color: green;
-    color: white;
-    padding: 15px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-.btn-carrinho:hover{
-    background-color: #008000b8;
-    transition: 0.3s;
-}
-
 /* Opções/Filtro do site */
 
 .search{    

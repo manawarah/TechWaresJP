@@ -8,22 +8,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../styles/defaults.css">
     <title>Login</title>
 </head>
 <body>  
-    <header>
-        <a href="../index.php">
-            <button class="btn-back">
-                Voltar
-            </button>
-        </a>
-    </header>
-    <div class="box-img">
-        <div>
-            <img src="../assets/Techware-final-txt.png" alt="">
-        </div>
+<header class="cabecalho">
+    <div class="logo">
+        <a href="../index.php"><img src="../assets/Techware.png" alt="logo" width="200px" class="img-header"></a>
     </div>
+    <nav class="nav-bar">
+        <div class="nav-div">
+            <i class="fa-solid fa-circle-question fa-lg" style="color: #e90313;"></i>
+            <span style="font-size: 10pt;">ATENDIMENTO</span>
+            <br>
+            <a class="nav-link" href="#">AO CLIENTE</a>
+        </div>
+        <div class="nav-div">
+            <i class="fa-solid fa-star fa-lg" style="color: #e90313;"></i>
+            <span style="font-size: 10pt;">MEUS</span>
+            <br>
+            <a class="nav-link" href="#">FAVORITOS</a>
+        </div>
+    </nav>
+</header>
     <div style="width: 600px; display: flex; justify-content: center; align-items: center;">
         <form action="<?php $_SERVER['PHP_SELF']?>" method="post">
             <label for="email">E-mail:</label>

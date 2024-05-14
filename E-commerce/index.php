@@ -63,62 +63,78 @@
 <main>
     <!-- Caixas de promoção -->
     <section id="promo">
-        <h1 class="title-page">Promoções</h1>
+        <h1 class="title-page"> Novidades. <span style="color: white; font-size: 25px;">Veja nossas promoções</span></h1>
             <div class="box-promo">
                 <img src="./assets/photos/products/monitor_1.png" alt="" class="img-promo">
                 <a href='#' class="desc-promo" title="Samsung T350 - Monitor Gamer, 24, FHD, 75Hz, HDMI, VGA, Freesync, Preto">
                     Samsung T350 - Monitor Gamer, 24", FHD, 75Hz, HDMI, VGA, Freesync, Preto>
                 </a>
-                <button class="btn-promo">R$695,98</button>
+                <del class="price">R$799,99</del>
+                <h1 class="dPrice">R$695,98</h1>
+                <span class="divideCartao">Até <span style="color: green;">10x</span> sem juros no cartão</span>
             </div>
             <div class="box-promo">
                 <img src="./assets/photos/products/monitor_2.png" alt="" class="img-promo">
                 <a href='#' class="desc-promo" title="Monitor para PC Full HD UltraWide LG LED IPS 29” - 29WK600, multi-color">
                     Monitor para PC Full HD UltraWide LG LED IPS 29” - 29WK600, multi-color
                 </a>
-                <button class="btn-promo">R$700,00</button>
+                <del class="price">R$799,99</del>
+                <h1 class="dPrice">R$695,98</h1>
+                <span class="divideCartao">Até <span style="color: green;">10x</span> sem juros no cartão</span>
             </div>
             <div class="box-promo">
                 <img src="./assets/photos/products/cpu_1.png" alt="" class="img-promo">
                 <a href='#' class="desc-promo" title="PC Gamer ITX Arena, Ryzen 5 5600G, Radeon™ Graphics Vega 7, 16GB Ram, SSD 480GB, Gabinete RGB">
                     PC Gamer ITX Arena, Ryzen 5 5600G, Radeon™ Graphics Vega 7, 16GB Ram, SSD 480GB, Gabinete RGB
                 </a>
-                <button class="btn-promo">R$2.399,00</button>
+                <del class="price">R$799,99</del>
+                <h1 class="dPrice">R$695,98</h1>
+                <span class="divideCartao">Até <span style="color: green;">10x</span> sem juros no cartão</span>
             </div>
             <div class="box-promo">
                 <img src="./assets/photos/products/mouse_1.png" alt="" class="img-promo">
                 <a href='#' class="desc-promo" title="Mouse Gamer Sem Fio Logitech G703 LIGHTSPEED com RGB LIGHTSYNC, 6 Botões Programáveis, Sensor HERO 25K e Bateria Recarregável - Compatível com POWERPLAY">
                     Mouse Gamer Sem Fio Logitech G703 LIGHTSPEED com RGB LIGHTSYNC, 6 Botões Programáveis, Sensor HERO 25K e Bateria Recarregável - Compatível com POWERPLAY
                 </a>
-                <button class="btn-promo">R$150,00</button>
+                <del class="price">R$799,99</del>
+                <h1 class="dPrice">R$695,98</h1>
+                <span class="divideCartao">Até <span style="color: green;">10x</span> sem juros no cartão</span>            
             </div>
             <div class="box-promo">
                 <img src="./assets/photos/products/teclado_1.png" alt="" class="img-promo">
                 <a href='#' class="desc-promo" title="Teclado HyperX Alloy Origins PBT Red BLACK">
                     Teclado HyperX Alloy Origins PBT Red BLACK
                 </a>
-                <button class="btn-promo">R$299,00</button>
+                <del class="price">R$799,99</del>
+                <h1 class="dPrice">R$695,98</h1>
+                <span class="divideCartao">Até <span style="color: green;">10x</span> sem juros no cartão</span>
             </div>
             <div class="box-promo">
                 <img src="./assets/photos/products/fone_1.png" alt="" class="img-promo">
                 <a href='#' class="desc-promo" title="JBL, Fone de Ouvido Sem Fio, Tune Buds, Bluetooth 5.3, À Prova D'água - Preto">
                     JBL, Fone de Ouvido Sem Fio, Tune Buds, Bluetooth 5.3, À Prova D'água - Preto
                 </a>
-                <button class="btn-promo">R$59,99</button>
+                <del class="price">R$799,99</del>
+                <h1 class="dPrice">R$695,98</h1>
+                <span class="divideCartao">Até <span style="color: green;">10x</span> sem juros no cartão</span>
             </div>
             <div class="box-promo">
                 <img src="./assets/photos/products/cpu_2.png" alt="" class="img-promo">
                 <a href='#' class="desc-promo" title="Teclado HyperX Alloy Origins PBT Red BLACK">
                     Teclado HyperX Alloy Origins PBT Red BLACK
                 </a>
-                <button class="btn-promo">R$299,00</button>
+                <del class="price">R$799,99</del>
+                <h1 class="dPrice">R$695,98</h1>
+                <span class="divideCartao">Até <span style="color: green;">10x</span> sem juros no cartão</span>
             </div>
             <div class="box-promo">
                 <img src="./assets/photos/products/teclado_2.png" alt="" class="img-promo">
                 <a href='#' class="desc-promo" title="JBL, Fone de Ouvido Sem Fio, Tune Buds, Bluetooth 5.3, À Prova D'água - Preto">
                     JBL, Fone de Ouvido Sem Fio, Tune Buds, Bluetooth 5.3, À Prova D'água - Preto
                 </a>
-                <button class="btn-promo">R$59,99</button>
+                <del class="price">R$799,99</del>
+                <h1 class="dPrice">R$695,98</h1>
+                <span class="divideCartao">Até <span style="color: green;">10x</span> sem juros no cartão</span>
             </div>
         </div>
     </section>
