@@ -159,6 +159,18 @@
         <i class="fa-computer fa-solid icon-info"></i>
     </div>
 </section>
+<section>
+    <footer style="color: aliceblue;">
+       <ol>
+        <li>instagran</li>
+        <li>facebook</li>
+        <li>twitter</li>
+        <li>whatsapp</li>
+       </ol>
+       <ol><h1>protocolo do site</h1></ol>
+       <li>comprar computadores</li>
+    </footer>
+</section>
 </body>
 <!--
             <div class="txt" >
