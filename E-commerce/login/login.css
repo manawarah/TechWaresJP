@@ -122,6 +122,9 @@ input[type='submit']:hover{
     background-color: rgb(66, 184, 42);
     color: white;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
 }
 .btn-register:hover{
 

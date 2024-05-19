@@ -41,8 +41,8 @@
             <input type="submit" value="Entrar" name='submit'>
             <a href="" class="resetPass">Esqueci minha senha</a>
             <span class='line'></span>
-            <a href="">
-                <button class="btn-register">Criar Conta</button>
+            <a href="../register/register.php" class="btn-register">
+                Criar Conta
             </a>
         </form>
     </div>
