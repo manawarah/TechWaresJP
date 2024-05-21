@@ -210,18 +210,37 @@
 <section>
     
 </section>
-<section>
-    <footer style="color: aliceblue;">
-       <ol>
-        <li>instagran</li>
+<footer style="color: aliceblue;">
+    <ul>
+        <li>instagram</li>
         <li>facebook</li>
         <li>twitter</li>
         <li>whatsapp</li>
-       </ol>
-       <ol><h1>protocolo do site</h1></ol>
-       <li>comprar computadores</li>
-    </footer>
-</section>
+    </ul>    
+    <ul>
+        <li>Conheça-nos </li>
+        <li>Sobre o e-commerce</li>
+        <li>informações corporativas</li>
+        <li>Carreiras</li>
+        <li>Comunicados à imprensa</li>
+        <li>Comunidade</li>
+        <li>Acessibilidade</li>
+        <li>E-commerc Science</li>
+    </ul>
+    <ul>
+        <li>Pagamento</li>
+        <li>Meios de Pagamento</li>
+        <li>Compre com Pontos</li>
+        <li>Cartão de Crédito</li>
+
+    </ul>
+    <ul>
+        <li>Ganhe dinheiro conosco</li>
+        <li>Venda no e-commerc</li>
+        <li>Proteja e construa o seu computador</li>
+        <li>anuncie seus produtos</li>
+    </ul>
+</footer>
 </body>
 <!--
             <div class="txt" >
