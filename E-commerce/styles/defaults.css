@@ -30,8 +30,8 @@ header{
     height: 50px;
     display: flex;
     align-items: center;
-    padding-left: 10px;;
 }
+
 /* Cabeçalho/Header do site */
 
 .cabecalho{
@@ -41,7 +41,7 @@ header{
 }
 .nav-bar{
     display: flex;
-    margin-right: 100px;
+    
 }
 .nav-div{
     margin-left: 20px;

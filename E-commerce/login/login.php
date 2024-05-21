@@ -1,6 +1,7 @@
 <?php
-    $email = $_POST['email'] ?? '';
+    $email = '';
 ?>
+    
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -33,7 +34,7 @@
     </nav>
 </header>
     <div style="width: 600px; display: flex; justify-content: center; align-items: center;">
-        <form action="<?php $_SERVER['PHP_SELF']?>" method="post">
+        <form action="config.php" method="post">
             <label for="email">E-mail:</label>
             <input type="text" name="email" class="" value="<?php echo "$email" ?>">
             <label for="password">Senha:</label>
