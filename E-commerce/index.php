@@ -1,3 +1,12 @@
+<?php
+    include_once('./database/conexao.php');
+    session_start();
+    $email = $_SESSION['email'] ?? '';
+    $sql = mysqli_query($conexao, "SELECT * FROM users WHERE email = '$email';");
+    $return = $sql->fetch_assoc();
+
+    $name = $return['nome'] ?? '';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -19,26 +28,65 @@
     <div class="logo">
         <a href="#"><img src="assets/Techware.png" alt="logo" width="200px"></a>
     </div>
-    <nav class="nav-bar">
-        <div class="nav-div">
-            <i class="fa-solid fa-user fa-lg" style="color: #e90313;"></i>
-            <span style="font-size: 10pt;">MINHA CONTA</span>
-            <br>
-            <a class="nav-link" href="login/login.php">ENTRAR / CADASTRO</a>
-        </div>
-        <div class="nav-div">
-            <i class="fa-solid fa-circle-question fa-lg" style="color: #e90313;"></i>
-            <span style="font-size: 10pt;">ATENDIMENTO</span>
-            <br>
-            <a class="nav-link" href="#">AO CLIENTE</a>
-        </div>
-        <div class="nav-div">
-            <i class="fa-solid fa-star fa-lg" style="color: #e90313;"></i>
-            <span style="font-size: 10pt;">MEUS</span>
-            <br>
-            <a class="nav-link" href="#">FAVORITOS</a>
-        </div>
-    </nav>
+    
+        
+
+    <?php
+        if(isset($_SESSION['email']) == true){
+            echo "
+                <nav class='nav-bar'>
+                    <div class='nav-div'>
+                        <i class='fa-solid fa-circle-question fa-lg' style='color: #e90313;'></i>
+                        <span style='font-size: 10pt;'>ATENDIMENTO</span>
+                        <br>
+                        <a class='nav-link' href='#'>AO CLIENTE</a>
+                    </div>
+                    <div class='nav-div'>
+                        <i class='fa-solid fa-star fa-lg' style='color: #e90313;'></i>
+                        <span style='font-size: 10pt;'>MEUS</span>
+                        <br>
+                        <a class='nav-link' href='#'>FAVORITOS</a>
+                    </div>
+                    <div class='nav-div'>
+                        <i class='fa-solid fa-user fa-lg' style='color: #e90313;'></i>
+                        <span style='font-size: 10pt;'>MINHA CONTA</span>
+                        <br>
+                        <p class='nav-link'>Olá $name</p>
+                    </div>
+                    <div class='nav-div' style='color: #e90313;'>
+                        <i class='fa-solid fa-right-from-bracket fa-lg'></i>
+                        <a href='logoff.php' class='nav-link'>SAIR</a>
+                        <br>
+                    </div>
+                </nav>
+
+            ";
+        }else{
+            echo "
+                <nav class='nav-bar'>
+                    <div class='nav-div'>
+                        <i class='fa-solid fa-user' fa-lg style='color: #e90313;'></i>
+                        <span style='font-size: 10pt;'>MINHA CONTA</span>
+                        <br>
+                        <a class='nav-link' href='login/login.php'>ENTRAR/CADASTRO</a>
+                    </div>
+                    <div class='nav-div'>
+                        <i class='fa-solid fa-circle-question fa-lg' style='color: #e90313;'></i>
+                        <span style='font-size: 10pt;'>ATENDIMENTO</span>
+                        <br>
+                        <a class='nav-link' href='#'>AO CLIENTE</a>
+                    </div>
+                    <div class='nav-div'>
+                        <i class='fa-solid fa-star fa-lg' style='color: #e90313;'></i>
+                        <span style='font-size: 10pt;'>MEUS</span>
+                        <br>
+                        <a class='nav-link' href='#'>FAVORITOS</a>
+                    </div>
+                </nav>
+
+            ";
+        }
+        ?>
     <button class="btn-carrinho">
         <i class="fa-solid fa-cart-shopping fa-lg" style="color: white;"></i>
     </button>
@@ -158,6 +206,9 @@
         <h1 class="text-info">COMPRE DE CASA</h1>
         <i class="fa-computer fa-solid icon-info"></i>
     </div>
+</section>
+<section>
+    
 </section>
 <section>
     <footer style="color: aliceblue;">
