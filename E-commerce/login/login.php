@@ -1,7 +1,6 @@
 <?php
-    $email = '';
+    $email = $_POST['email'] ?? '';
 ?>
-    
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

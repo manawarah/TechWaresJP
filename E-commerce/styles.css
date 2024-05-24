@@ -112,8 +112,6 @@
     margin-top: 10px;
     cursor: pointer;
 }
-
-
 footer{
     width: 100%;
     display: flex;
@@ -125,4 +123,8 @@ footer{
 ul{
     list-style: none;
     margin: auto 50px;
+}
+li{
+
+    color: white;
 }

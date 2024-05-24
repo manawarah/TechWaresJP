@@ -26,11 +26,12 @@ DROP TABLE IF EXISTS `produtos`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `produtos` (
   `idProduto` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(40) DEFAULT NULL,
+  `nome` varchar(60) DEFAULT NULL,
   `preco` decimal(10,2) DEFAULT NULL,
   `descricao` text DEFAULT NULL,
+  `foto` varchar(60) DEFAULT NULL,
   PRIMARY KEY (`idProduto`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,6 +40,7 @@ CREATE TABLE `produtos` (
 
 LOCK TABLES `produtos` WRITE;
 /*!40000 ALTER TABLE `produtos` DISABLE KEYS */;
+INSERT INTO `produtos` VALUES (2,'Samsung T350 - Monitor Gamer, 24\", FHD, 75Hz, HDMI, VGA, Fre',539.90,'','assets/photos/products/monitor1.png'),(3,'Monitor para PC Full HD UltraWide LG LED IPS 29” - 29WK600, ',478.45,'','assets/photos/products/monitor2.png'),(4,'Mouse Gamer Sem Fio Logitech G703 LIGHTSPEED com RGB LIGHTSY',124.45,'','assets/photos/products/mouse1.png'),(5,' Teclado HyperX Alloy Origins PBT Red BLACK',247.25,'','assets/photos/products/teclado1.png'),(6,'JBL, Fone de Ouvido Sem Fio, Tune Buds, Bluetooth 5.3',143.99,'','assets/photos/products/fone1.png'),(7,'Pc Gamer Computador Cpu Intel I5 HD 1TB Memoria Ram 16GB',2420.99,'','assets/photos/products/cpu2.png'),(8,'Teclado Gamer Rise Mode G1 Full, Rgb Rainbow, USB',420.99,'','assets/photos/products/teclado2.png'),(9,'Pc Gamer Intel Core I7 6700 SSD 1TB 32GB RAM',1290.99,'','assets/photos/products/cpu1.png');
 /*!40000 ALTER TABLE `produtos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -59,7 +61,7 @@ CREATE TABLE `users` (
   `endereco` text DEFAULT NULL,
   `senha` varchar(16) DEFAULT NULL,
   PRIMARY KEY (`idUser`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,6 +70,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (3,'teste','teste@gmail.com','00000000000','000.000.000','44444444','aaaaaaaaaaaa','123');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -80,4 +83,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-05-19 16:21:51
+-- Dump completed on 2024-05-23 22:10:15

@@ -28,9 +28,6 @@
     <div class="logo">
         <a href="#"><img src="assets/Techware.png" alt="logo" width="200px"></a>
     </div>
-    
-        
-
     <?php
         if(isset($_SESSION['email']) == true){
             echo "
@@ -112,79 +109,27 @@
     <!-- Caixas de promoção -->
     <section id="promo">
         <h1 class="title-page"> Novidades. <span style="color: white; font-size: 25px;">Veja nossas promoções</span></h1>
-            <div class="box-promo">
-                <img src="./assets/photos/products/monitor_1.png" alt="" class="img-promo">
-                <a href='#' class="desc-promo" title="Samsung T350 - Monitor Gamer, 24, FHD, 75Hz, HDMI, VGA, Freesync, Preto">
-                    Samsung T350 - Monitor Gamer, 24", FHD, 75Hz, HDMI, VGA, Freesync, Preto>
-                </a>
-                <del class="price">R$799,99</del>
-                <h1 class="dPrice">R$695,98</h1>
-                <span class="divideCartao">Até <span style="color: green;">10x</span> sem juros no cartão</span>
-            </div>
-            <div class="box-promo">
-                <img src="./assets/photos/products/monitor_2.png" alt="" class="img-promo">
-                <a href='#' class="desc-promo" title="Monitor para PC Full HD UltraWide LG LED IPS 29” - 29WK600, multi-color">
-                    Monitor para PC Full HD UltraWide LG LED IPS 29” - 29WK600, multi-color
-                </a>
-                <del class="price">R$799,99</del>
-                <h1 class="dPrice">R$695,98</h1>
-                <span class="divideCartao">Até <span style="color: green;">10x</span> sem juros no cartão</span>
-            </div>
-            <div class="box-promo">
-                <img src="./assets/photos/products/cpu_1.png" alt="" class="img-promo">
-                <a href='#' class="desc-promo" title="PC Gamer ITX Arena, Ryzen 5 5600G, Radeon™ Graphics Vega 7, 16GB Ram, SSD 480GB, Gabinete RGB">
-                    PC Gamer ITX Arena, Ryzen 5 5600G, Radeon™ Graphics Vega 7, 16GB Ram, SSD 480GB, Gabinete RGB
-                </a>
-                <del class="price">R$799,99</del>
-                <h1 class="dPrice">R$695,98</h1>
-                <span class="divideCartao">Até <span style="color: green;">10x</span> sem juros no cartão</span>
-            </div>
-            <div class="box-promo">
-                <img src="./assets/photos/products/mouse_1.png" alt="" class="img-promo">
-                <a href='#' class="desc-promo" title="Mouse Gamer Sem Fio Logitech G703 LIGHTSPEED com RGB LIGHTSYNC, 6 Botões Programáveis, Sensor HERO 25K e Bateria Recarregável - Compatível com POWERPLAY">
-                    Mouse Gamer Sem Fio Logitech G703 LIGHTSPEED com RGB LIGHTSYNC, 6 Botões Programáveis, Sensor HERO 25K e Bateria Recarregável - Compatível com POWERPLAY
-                </a>
-                <del class="price">R$799,99</del>
-                <h1 class="dPrice">R$695,98</h1>
-                <span class="divideCartao">Até <span style="color: green;">10x</span> sem juros no cartão</span>            
-            </div>
-            <div class="box-promo">
-                <img src="./assets/photos/products/teclado_1.png" alt="" class="img-promo">
-                <a href='#' class="desc-promo" title="Teclado HyperX Alloy Origins PBT Red BLACK">
-                    Teclado HyperX Alloy Origins PBT Red BLACK
-                </a>
-                <del class="price">R$799,99</del>
-                <h1 class="dPrice">R$695,98</h1>
-                <span class="divideCartao">Até <span style="color: green;">10x</span> sem juros no cartão</span>
-            </div>
-            <div class="box-promo">
-                <img src="./assets/photos/products/fone_1.png" alt="" class="img-promo">
-                <a href='#' class="desc-promo" title="JBL, Fone de Ouvido Sem Fio, Tune Buds, Bluetooth 5.3, À Prova D'água - Preto">
-                    JBL, Fone de Ouvido Sem Fio, Tune Buds, Bluetooth 5.3, À Prova D'água - Preto
-                </a>
-                <del class="price">R$799,99</del>
-                <h1 class="dPrice">R$695,98</h1>
-                <span class="divideCartao">Até <span style="color: green;">10x</span> sem juros no cartão</span>
-            </div>
-            <div class="box-promo">
-                <img src="./assets/photos/products/cpu_2.png" alt="" class="img-promo">
-                <a href='#' class="desc-promo" title="Teclado HyperX Alloy Origins PBT Red BLACK">
-                    Teclado HyperX Alloy Origins PBT Red BLACK
-                </a>
-                <del class="price">R$799,99</del>
-                <h1 class="dPrice">R$695,98</h1>
-                <span class="divideCartao">Até <span style="color: green;">10x</span> sem juros no cartão</span>
-            </div>
-            <div class="box-promo">
-                <img src="./assets/photos/products/teclado_2.png" alt="" class="img-promo">
-                <a href='#' class="desc-promo" title="JBL, Fone de Ouvido Sem Fio, Tune Buds, Bluetooth 5.3, À Prova D'água - Preto">
-                    JBL, Fone de Ouvido Sem Fio, Tune Buds, Bluetooth 5.3, À Prova D'água - Preto
-                </a>
-                <del class="price">R$799,99</del>
-                <h1 class="dPrice">R$695,98</h1>
-                <span class="divideCartao">Até <span style="color: green;">10x</span> sem juros no cartão</span>
-            </div>
-        </div>
+            <?php
+                $sql = mysqli_query($conexao, 'SELECT * FROM produtos');
+                while($pro = $sql->fetch_assoc()){
+                    $pId = $pro['idProduto'];
+                    $pName = $pro['nome'];
+                    $pPrice = $pro['preco'];
+                    $pPhoto = $pro['foto'];
+
+                    echo "
+                    <div class='box-promo'>
+                        <img src='$pPhoto' alt='' class='img-promo'>
+                        <a href='product/product.php?id=$pId' class='desc-promo' title='$pName'>
+                            $pName
+                        </a>
+                        <del class='price'>R$799,99</del>
+                        <h1 class='dPrice'>R$$pPrice</h1>
+                        <span class='divideCartao'>Até <span style='color: green;'>10x</span> sem juros no cartão</span>
+                    </div>
+                    ";
+                }
+            ?>
     </section>
 </main>
 
@@ -208,49 +153,37 @@
     </div>
 </section>
 <section>
-    
-</section>
-<footer style="color: aliceblue;">
+<footer>
     <ul>
-        <li>instagram</li>
-        <li>facebook</li>
-        <li>twitter</li>
-        <li>whatsapp</li>
+        <li style="color: red;">Redes Sociais</li>
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Whatsapp</li>
     </ul>    
     <ul>
-        <li>Conheça-nos </li>
+        <li style="color: red;">Conheça-nos</li>
         <li>Sobre o e-commerce</li>
-        <li>informações corporativas</li>
-        <li>Carreiras</li>
         <li>Comunicados à imprensa</li>
         <li>Comunidade</li>
         <li>Acessibilidade</li>
-        <li>E-commerc Science</li>
     </ul>
     <ul>
-        <li>Pagamento</li>
-        <li>Meios de Pagamento</li>
-        <li>Compre com Pontos</li>
+        <li style="color: red;">Pagamentos</li>
+        <li>PIX</li>
+        <li>Boleto</li>
+        <li>Paypal</li>
         <li>Cartão de Crédito</li>
 
     </ul>
     <ul>
+        <li style="color: red;">Outros</li>
         <li>Ganhe dinheiro conosco</li>
         <li>Venda no e-commerc</li>
         <li>Proteja e construa o seu computador</li>
-        <li>anuncie seus produtos</li>
+        <li>Anuncie seus produtos</li>
     </ul>
 </footer>
+</section>
 </body>
-<!--
-            <div class="txt" >
-            <h1 style="font-size: 20pt;">Seja bem-vindo à TechWare, sua loja completa de periféricos e tecnologia!</h1>
-            <br>
-            <p style="font-size: 13pt;">Na <strong>TechWare</strong>, você encontra tudo o que precisa para equipar seu computador e aproveitar ao máximo sua experiência com tecnologia. Somos apaixonados por produtos de alta qualidade e preços competitivos, e estamos sempre buscando novidades para oferecer aos nossos clientes.</p>
-            <br>
-            <button class="btn-sobrenos">Sobre Nós</button>
-        </div>
-
--->
-
 </html>

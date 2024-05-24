@@ -1,5 +1,5 @@
 <?php
-    $dbHost = '127.0.0.1:3307';
+    $dbHost = 'Localhost';
     $dbUser = 'root';
     $dbPassword = '';
     $dbName = 'techwarejp';
