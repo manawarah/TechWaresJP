@@ -31,7 +31,7 @@ CREATE TABLE `produtos` (
   `descricao` text DEFAULT NULL,
   `foto` varchar(60) DEFAULT NULL,
   PRIMARY KEY (`idProduto`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `produtos` (
 
 LOCK TABLES `produtos` WRITE;
 /*!40000 ALTER TABLE `produtos` DISABLE KEYS */;
-INSERT INTO `produtos` VALUES (2,'Samsung T350 - Monitor Gamer, 24\", FHD, 75Hz, HDMI, VGA, Fre',539.90,'','assets/photos/products/monitor1.png'),(3,'Monitor para PC Full HD UltraWide LG LED IPS 29” - 29WK600, ',478.45,'','assets/photos/products/monitor2.png'),(4,'Mouse Gamer Sem Fio Logitech G703 LIGHTSPEED com RGB LIGHTSY',124.45,'','assets/photos/products/mouse1.png'),(5,' Teclado HyperX Alloy Origins PBT Red BLACK',247.25,'','assets/photos/products/teclado1.png'),(6,'JBL, Fone de Ouvido Sem Fio, Tune Buds, Bluetooth 5.3',143.99,'','assets/photos/products/fone1.png'),(7,'Pc Gamer Computador Cpu Intel I5 HD 1TB Memoria Ram 16GB',2420.99,'','assets/photos/products/cpu2.png'),(8,'Teclado Gamer Rise Mode G1 Full, Rgb Rainbow, USB',420.99,'','assets/photos/products/teclado2.png'),(9,'Pc Gamer Intel Core I7 6700 SSD 1TB 32GB RAM',1290.99,'','assets/photos/products/cpu1.png');
+INSERT INTO `produtos` VALUES (2,'Samsung T350 - Monitor Gamer, 24\", FHD, 75Hz, HDMI, VGA, Fre',539.90,'','assets/photos/products/monitor1.png'),(3,'Monitor para PC Full HD UltraWide LG LED IPS 29” - 29WK600, ',478.45,'','assets/photos/products/monitor2.png'),(4,'Mouse Gamer Sem Fio Logitech G703 LIGHTSPEED com RGB LIGHTSY',124.45,'','assets/photos/products/mouse1.png'),(5,' Teclado HyperX Alloy Origins PBT Red BLACK',247.25,'','assets/photos/products/teclado1.png'),(6,'JBL, Fone de Ouvido Sem Fio, Tune Buds, Bluetooth 5.3',143.99,'','assets/photos/products/fone1.png'),(7,'Pc Gamer Computador Cpu Intel I5 HD 1TB Memoria Ram 16GB',2420.99,'','assets/photos/products/cpu2.png'),(8,'Teclado Gamer Rise Mode G1 Full, Rgb Rainbow, USB',420.99,'','assets/photos/products/teclado2.png'),(9,'Pc Gamer Intel Core I7 6700 SSD 1TB 32GB RAM',1290.99,'','assets/photos/products/cpu1.png'),(10,'Cadeira Gamer Ninja Hiryu, Preto e Vermelho',349.90,'','assets/photos/products/cadeira2.png'),(11,'Cadeira Gamer Colorida, Preto, Vermelho, Verde e Amarelo',400.90,'','assets/photos/products/cadeira1.png'),(12,'Cadeira Gamer Vermelha, Confortavel',520.99,'','assets/photos/products/cadeira3.png'),(13,'Controle Gamer Preto, Bluetooth, Bateria e USB',99.99,'','assets/photos/products/controle.png'),(14,'Mesa Gamer, Tamanho Pequeno, Feita de Madeira',599.99,'','assets/photos/products/mesa1.png'),(15,'Mesa Gamer e Cadeira Gamer, Tamanho Pequeno, Minimalista',999.99,'','assets/photos/products/mesacadeira1.png'),(16,'Controle Gamer, Preto, Com Carregador',199.99,'','assets/photos/products/controle1.png'),(17,'PC Gamer Completo, Teclado, Mouse, CPU i7, 16 RAM',2199.99,'','assets/photos/products/pc.jpg');
 /*!40000 ALTER TABLE `produtos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -83,4 +83,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-05-23 22:10:15
+-- Dump completed on 2024-05-24 19:34:37
