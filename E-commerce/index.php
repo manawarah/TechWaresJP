@@ -117,14 +117,15 @@ $name = $return['nome'] ?? '';
                 $pName = $pro['nome'];
                 $pPrice = $pro['preco'];
                 $pPhoto = $pro['foto'];
+                $exPrice = $pro['preco'] + 130.57;
 
                 echo "
                     <div class='box-promo'>
                         <img src='$pPhoto' alt='' class='img-promo'>
-                        <a href='product/product.php?id=$pId' class='desc-promo' title='$pName'>
+                        <a href='product/cartao.php?id=$pId' class='desc-promo' title='$pName'>
                             $pName
                         </a>
-                        <del class='price'>R$799,99</del>
+                        <del class='price'>R$$exPrice</del>
                         <h1 class='dPrice'>R$$pPrice</h1>
                         <span class='divideCartao'>Até <span style='color: green;'>10x</span> sem juros no cartão</span>
                     </div>
@@ -161,14 +162,16 @@ $name = $return['nome'] ?? '';
                 $pName2 = $pro2['nome'];
                 $pPrice2 = $pro2['preco'];
                 $pPhoto2 = $pro2['foto'];
+                $exPrice = $pro2['preco'] + 130;
+                
 
                 echo "
                 <div class='box-promo'>
                     <img src='$pPhoto2' alt='' class='img-promo'>
-                    <a href='product/product.php?id=$pId2' class='desc-promo' title='$pName2'>
+                    <a href='product/cartao.php?id=$pId2' class='desc-promo' title='$pName2'>
                         $pName2
                     </a>
-                    <del class='price'>R$799,99</del>
+                    <del class='price'>R$$exPrice</del>
                     <h1 class='dPrice'>R$$pPrice2</h1>
                     <span class='divideCartao'>Até <span style='color: green;'>10x</span> sem juros no cartão</span>
                 </div>
