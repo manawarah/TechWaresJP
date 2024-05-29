@@ -6,20 +6,14 @@
     <link rel="stylesheet" href="../styles/defaults.css">
     <link rel="stylesheet" href="cliente.css">
     <link rel="stylesheet" href="../fontawesome/css/all.min.css">
-    <title>Document</title>
+    <title>Atendimento ao Cliente</title>
 </head>
 <body style="width: 100%;">
     <header class="cabecalho">
         <div class="logo">
-            <a href="#"><img src="../assets/Techware.png" alt="logo" width="200px"></a>
+            <a href="../index.php"><img src="../assets/Techware.png" alt="logo" width="200px"></a>
         </div>
         <nav class="nav-bar">
-            <div class="nav-div">
-                <i class="fa-solid fa-circle-question fa-lg" style="color: #e90313;"></i>
-                <span style="font-size: 10pt;">ATENDIMENTO</span>
-                <br>
-                <a class="nav-link" href="#">AO CLIENTE</a>
-            </div>
             <div class="nav-div">
                 <i class="fa-solid fa-star fa-lg" style="color: #e90313;"></i>
                 <span style="font-size: 10pt;">MEUS</span>
@@ -30,7 +24,7 @@
                 <i class="fa-solid fa-user fa-lg" style="color: #e90313;"></i>
                 <span style="font-size: 10pt;">MINHA CONTA</span>
                 <br>
-                <a class="nav-link" href="login/login.php">ENTRAR / CADASTRO</a>
+                <a class="nav-link" href="../login/login.php">ENTRAR / CADASTRO</a>
             </div>
         </nav>
         <button class="btn-carrinho">
@@ -83,16 +77,6 @@
                 </div>
                 
             </section>
-            <nav>
-                <div class="menu">
-                  <button class="menubtn"><i class="fa-solid fa-bars"></i></button>
-                  <div class="menuopc">
-                      <a href="#">Início</a>
-                      <a href="#">Projetos</a>
-                      <a href="#">Sobre</a>
-                  </div>
-                </div>
-          </nav>
     </main>
 </body>
 </html>

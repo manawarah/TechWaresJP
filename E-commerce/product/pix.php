@@ -54,6 +54,14 @@
         function paypal(){
             location.href = "<?php echo "paypal.php?id=$pId" ?>";
         }
+        document.getElementsByName('submit')[0].addEventListener('click', function(){
+            if(confirm('Você deseja realizar a compra?')){
+                setTimeout(function(){
+                    window.alert('Compra realizada com sucesso!')
+                    location.href = '../index.php';
+                }, 3000)
+            }
+        });
     </script>
 </body>
 </html>

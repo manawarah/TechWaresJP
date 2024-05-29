@@ -31,7 +31,7 @@
     <header>
         <a href="../index.php" class="fa-solid fa-right-from-bracket fa-lg"></a>
     </header>
-    <main>
+    <form action="compraFinalizada.php">
         <div style="width: 230px; height: 100%;">
             <img src="<?php echo "../$pPhoto" ?>" alt="">
             <h2>R$ <?php echo $pPrice ?></h2>
@@ -43,6 +43,7 @@
             <input type="number" name="mmaa" placeholder="MM / AA *" style="width: 150px;" required>
             <input type="number" name="cvv" placeholder="CVV *" style="width: 150px;" required>
             <select name="" style="margin-top: 10px" required>
+                <option value="">Selecione as parcelas</option>
                 <option value="">1x no cartão sem juros</option>
                 <option value="">2x no cartão sem juros</option>
                 <option value="">3x no cartão sem juros</option>
@@ -54,8 +55,7 @@
             </div>
             <input type="submit" value="Comprar" name="submit">
         </div>
-
-    </main>
+    </form>
     <script>
         function pix(){
             location.href = "<?php echo "pix.php?id=$pId" ?>";
@@ -64,15 +64,20 @@
             location.href = "<?php echo "paypal.php?id=$pId" ?>";
         }
         document.getElementsByName('submit')[0].addEventListener('click', function(){
-            
+            var nameCard = document.getElementsByName('nome')[0];
+            var numberCard = document.getElementsByName('numero')[0];
+            var mmAA = document.getElementsByName('mmaa')[0];
+            var cvv = document.getElementsByName('cvv')[0];
+            if(nameCard.value.length < 3 || numberCard.value.length != 16 || mmAA.value.length != 4 || cvv.length.value != 3){
+
+                preventEvent();
+            }
             if(confirm('Você deseja realizar a compra?')){
                 setTimeout(function(){
-
                     window.alert('Compra realizada com sucesso!')
                     location.href = '../index.php';
-                }, 5000)
+                }, 3000)
             }
-
         })
     </script>
 </body>

@@ -38,7 +38,7 @@ $name = $return['nome'] ?? '';
                         <i class='fa-solid fa-circle-question fa-lg' style='color: #e90313;'></i>
                         <span style='font-size: 10pt;'>ATENDIMENTO</span>
                         <br>
-                        <a class='nav-link' href='cliente/cliente.html'>AO CLIENTE</a>
+                        <a class='nav-link' href='cliente/cliente.php'>AO CLIENTE</a>
                     </div>
                     <div class='nav-div'>
                         <i class='fa-solid fa-star fa-lg' style='color: #e90313;'></i>
@@ -142,7 +142,7 @@ $name = $return['nome'] ?? '';
             Informações
         </h1>
         <div class="info">
-            <h1 class="text-info">FRETE GRÁTIS</h1>
+            <h1 class="text-info">FRETE GRÁTIS EM TODAS AS COMPRAS</h1>
             <i class="fa-truck fa-solid icon-info"></i>
         </div>
         <div class="info">
@@ -150,11 +150,12 @@ $name = $return['nome'] ?? '';
             <i class="fa-user fa-solid icon-info"></i>
         </div>
         <div class="info">
-            <h1 class="text-info">COMPRE DE CASA</h1>
+            <h1 class="text-info">MONTE SEU PC DIRETO DA SUA CASA</h1>
             <i class="fa-computer fa-solid icon-info"></i>
         </div>
     </section>
     <section class="promo">
+        <h1 class="title-page">Veja a nossa <span style="color: white; font-size: 25px;">Queima de Estoque</span></h1>
         <?php
             $sql = mysqli_query($conexao, 'SELECT * FROM produtos LIMIT 12 OFFSET 8');
             while($pro2 = $sql->fetch_assoc()){
