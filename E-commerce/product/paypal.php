@@ -31,7 +31,7 @@
     <header>
         <a href="../index.php" class="fa-solid fa-right-from-bracket fa-lg"></a>
     </header>
-    <main>
+    <form>
         <div style="width: 230px; height: 100%;">
             <img src="<?php echo "../$pPhoto" ?>" alt="">
             <h2>R$ <?php echo $pPrice ?></h2>
@@ -46,7 +46,7 @@
             <input type="submit" value="Comprar" name="submit">
         </div>
 
-    </main>
+    </form>
     <script>
         function card(){
             location.href = "<?php echo "cartao.php?id=$pId" ?>";

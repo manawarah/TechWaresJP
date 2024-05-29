@@ -11,10 +11,10 @@
     <header>
 
     </header>
-    <main>
+    <form>
         <h1>Compra finalizada com sucesso</h1>
         <img src="../assets/check.png" alt="">
-    </main>
+    </form>
 
     <style>
         h1{
@@ -22,7 +22,7 @@
             font-size: 25px;
             text-align: center;
         }
-        main{
+        form{
             display: grid;
             place-items: center;
         }
@@ -34,5 +34,10 @@
             outline: none;
         }
     </style>
+    <script>
+        setTimeout(() => {
+            location.href = '../index.php';
+        }, 3000)
+    </script>
 </body>
 </html>
