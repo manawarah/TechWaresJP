@@ -99,10 +99,10 @@ $name = $return['nome'] ?? '';
             <option value="periféricos">Periféricos</option>
             <option value="computadores">Computadores</option>
             <option value="monitores">Monitores</option>
-            <option value="cadeiramesa">Cadeira e Mesas Gamer e Escritório</option>
+            <option value="cadeiramesa">Cadeiras e Mesas Gamer e Escritório</option>
             <option value="notebooks">Notebooks e Portáeis</option>
             <option value="vídeogames">Vídeo-Games</option>
-            <option value="redes_wireless">Redes e Wireless</option>
+            <option value="redes_wireless">Rede e Wireless</option>
         </select>
         <input class="pesquisar" type="search" name="Pesquisar" placeholder="Digite o que você procura... ">
     </section>
@@ -150,7 +150,7 @@ $name = $return['nome'] ?? '';
             <i class="fa-user fa-solid icon-info"></i>
         </div>
         <div class="info">
-            <h1 class="text-info">MONTE SEU PC DIRET DA SUA CASA</h1>
+            <h1 class="text-info">MONTE SEU PC DIRETO DA SUA CASA</h1>
             <i class="fa-computer fa-solid icon-info"></i>
         </div>
     </section>
@@ -208,7 +208,7 @@ $name = $return['nome'] ?? '';
             <li>Ganhe dinheiro conosco</li>
             <li>Venda no e-commerce</li>
             <li>Proteja e construa o seu PC</li>
-            <li>Anuncie os seus Produtos</li>
+            <li>Anuncie seus Produtos</li>
         </ul>
     </footer>
 </body>
