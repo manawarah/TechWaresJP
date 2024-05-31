@@ -74,8 +74,8 @@
             <input type="text" name="address"  placeholder="Digite seu Endereço" class="placeholder-center" value="<?php echo"$address"?>">
             <p class="msg-error msg-address"></p>
             <br><br>
-            <label for="rsenha">Repita a senha:</label>
-            <input type="password" name="rpass" placeholder="Repita sua senha" class="placeholder-center">
+            <label for="rsenha">Confirme a sua senha:</label>
+            <input type="password" name="rpass" placeholder="Confirme a sua senha" class="placeholder-center">
             <p class="msg-error msg-rpass"></p>
         </div>
         <input type="submit" value="Registrar" name='submit' onclick="register()">

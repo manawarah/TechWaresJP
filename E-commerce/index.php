@@ -142,20 +142,20 @@ $name = $return['nome'] ?? '';
             Informações
         </h1>
         <div class="info">
-            <h1 class="text-info">FRETE GRÁTIS EM TODAS AS COMPRAS</h1>
+            <h1 class="text-info">FRETE GRÁTIS EM TODAS AS SUAS COMPRAS</h1>
             <i class="fa-truck fa-solid icon-info"></i>
         </div>
         <div class="info">
-            <h1 class="text-info">CRIE UMA CONTA E FAÇA SUA COMPRA</h1>
+            <h1 class="text-info">CRIE UMA CONTA E FAÇA SUAS COMPRAS</h1>
             <i class="fa-user fa-solid icon-info"></i>
         </div>
         <div class="info">
-            <h1 class="text-info">MONTE SEU PC DIRETO DA SUA CASA</h1>
+            <h1 class="text-info">MONTE SEU PC DIRET DA SUA CASA</h1>
             <i class="fa-computer fa-solid icon-info"></i>
         </div>
     </section>
     <section class="promo">
-        <h1 class="title-page">Veja a nossa <span style="color: white; font-size: 25px;">Queima de Estoque</span></h1>
+        <h1 class="title-page">Aproveite a nossa <span style="color: white; font-size: 25px;">Queima de Estoque</span></h1>
         <?php
             $sql = mysqli_query($conexao, 'SELECT * FROM produtos LIMIT 12 OFFSET 8');
             while($pro2 = $sql->fetch_assoc()){
@@ -191,12 +191,12 @@ $name = $return['nome'] ?? '';
         <ul>
             <li style="color: red;">Conheça-nos</li>
             <li>Sobre o e-commerce</li>
-            <li>Comunicados à imprensa</li>
+            <li>Comunicados</li>
             <li>Comunidade</li>
             <li>Acessibilidade</li>
         </ul>
         <ul>
-            <li style="color: red;">Pagamentos</li>
+            <li style="color: red;">Fromas de pagamento</li>
             <li>PIX</li>
             <li>Boleto</li>
             <li>Paypal</li>
@@ -205,10 +205,10 @@ $name = $return['nome'] ?? '';
         </ul>
         <ul>
             <li style="color: red;">Outros</li>
-            <li>Ganhe dinheiro Conosco</li>
-            <li>Venda no e-commerc</li>
-            <li>Proteja e construa o seu Computador</li>
-            <li>Anuncie seus Produtos</li>
+            <li>Ganhe dinheiro conosco</li>
+            <li>Venda no e-commerce</li>
+            <li>Proteja e construa o seu PC</li>
+            <li>Anuncie os seus Produtos</li>
         </ul>
     </footer>
 </body>

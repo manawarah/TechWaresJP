@@ -49,27 +49,27 @@
                 <div class="duvidas">
                     <h2 style="font-size: 30pt; color: white; margin-top: 2%;">Dúvidas frequentes</h2>
                     <button class="btn-duvidas">
-                        DÚVIDA SOBRE CADASTRO <i class="fa-solid fa-chevron-right fa-2xs" style="color: #ffffff;"></i>
+                        DÚVIDAS SOBRE CADASTRO <i class="fa-solid fa-chevron-right fa-2xs" style="color: #ffffff;"></i>
                     </button>
                     <button class="btn-duvidas">
-                        DÚVIDA SOBRE PAGAMENTO <i class="fa-solid fa-chevron-right fa-2xs" style="color: #ffffff;"></i>
+                        DÚVIDAS SOBRE PAGAMENTO <i class="fa-solid fa-chevron-right fa-2xs" style="color: #ffffff;"></i>
                     </button>
                     <button class="btn-duvidas">
-                        DÚVIDA SOBRE ENTREGA <i class="fa-solid fa-chevron-right fa-2xs" style="color: #ffffff;"></i>
+                        DÚVIDAS SOBRE ENTREGA <i class="fa-solid fa-chevron-right fa-2xs" style="color: #ffffff;"></i>
                     </button>
                     <button class="btn-duvidas">
-                        DÚVIDA SOBRE TROCA E DEVOLUÇÃO <i class="fa-solid fa-chevron-right fa-2xs" style="color: #ffffff;"></i>
+                        DÚVIDAS SOBRE TROCA E DEVOLUÇÃO <i class="fa-solid fa-chevron-right fa-2xs" style="color: #ffffff;"></i>
                     </button>
                     <button class="btn-duvidas">
-                        DÚVIDA SOBRE CADASTRO <i class="fa-solid fa-chevron-right fa-2xs" style="color: #ffffff;"></i>
+                        DÚVIDAS SOBRE CADASTRO <i class="fa-solid fa-chevron-right fa-2xs" style="color: #ffffff;"></i>
                     </button>
 
                     <h2 style="font-size: 30pt; color: white; margin-top: 2%;">Serviços mais buscados</h2>
                     <button class="btn-duvidas">
-                        DÚVIDA SOBRE O PEDIDO <i class="fa-solid fa-chevron-right fa-2xs" style="color: #ffffff;"></i>
+                        DÚVIDAS SOBRE O SEU PEDIDO <i class="fa-solid fa-chevron-right fa-2xs" style="color: #ffffff;"></i>
                     </button>
                     <button class="btn-duvidas">
-                        ENTENDA AS FASES DA SUA COMPRA <i class="fa-solid fa-chevron-right fa-2xs" style="color: #ffffff;"></i>
+                        ENTENDA AS ETAPAS DA SUA COMPRA <i class="fa-solid fa-chevron-right fa-2xs" style="color: #ffffff;"></i>
                     </button>
                 </div>
                 <div class="imgTech">
