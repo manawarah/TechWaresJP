@@ -31,14 +31,14 @@
     <header>
         <a href="../index.php" class="fa-solid fa-right-from-bracket fa-lg"></a>
     </header>
-    <form>
+    <form action="compraFinalizada.php">
         <div style="width: 230px; height: 100%;">
             <img src="<?php echo "../$pPhoto" ?>" alt="">
             <h2>R$ <?php echo $pPrice ?></h2>
         </div>
         <div>
             <h1><?php echo $pName ?></h1>
-            <img src="../assets/photos/qr code.png" alt="" style="margin: 0;">
+            <img src="../assets/qrcode.jpg" alt="" style="margin: 0;">
             <div class="box-icons">
                 <i class="fa-brands fa-paypal icon-buy" title="Paypal" onclick="paypal()"></i>
                 <i class="fa-solid fa-credit-card icon-buy" title="Cartão de Crédito" onclick="card()"></i>
